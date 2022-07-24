@@ -1,0 +1,55 @@
+#+title: Why I don't use GitHub
+#+subtitle: And you shouldn't either
+#+author: Ethan Coe-Renner
+
+* Centralization
+Centralization of infrastructure is bad.
+When one organization has a near monopoly over a form of infrastructure, especially one as fundamental to our modern world as code hosting, that organization accrues an immense power over the evolution of that infrastructure as a whole.
+When that organization is operated according to a profit motive, it's incentives become distorted. This is especially true of free services like GitHub, much of their funding comes from investors, not users. This makes GitHub the company beholden to that first group, not the second. This problem is exacerbated when the company is bought by another, larger company.
+** Microsoft
+Microsoft has long been hostile to open source, CEO Steve Ballmer is famous for having said of the larges free software project, [[https://www.theregister.com/2001/06/02/ballmer_linux_is_a_cancer/]["Linux is a cancer"]]. He has since, apparently, changed his mind, but this attitude toward open source has been typical of the company since its founding.
+Microsoft claims that these days are over, infamously exclaiming "Microsoft ❤️ Linux!".
+I, and [[https://davelane.nz/microsoft-there-way-win-our-trust][many others]] are dubious of these claims. The [[https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish]["Embrace, Extend, Extinguish"]] mantra used internally at Microsoft illustrates the danger they pose to free software projects their products touch.
+Microsoft bought GitHub in 2018, leading many to look for [[Other Options][other options]].
+
+* Github Copilot
+This is a concrete example of the problems of centralization in this space. GitHub Copilot represents a blatent disregard for software licenses on the part of Github and Microsoft.
+Copilot is an "AI pair programmer" which "suggest[s] code and entire functions in real-time, right from your editor". This, despite the existential risk it hints at to software deverlopers, is legitimately interesting. The problem, however, is in how it was trained.
+
+Copilot is a neural network, based on GPT-3, which was trained on code from GitHub itself.
+Much of this code is licensed under copyleft licenses, such as the GPL, which require that all derivative works also be licensed under the GPL.
+
+Copilot even sometimes produces exact replicas of code from its training data, in fact Github itself found that it does this 0.1% of the time.
+This may seem like an insignificant amount, barely worth mentioning, but consider the intended use case of Copilot. Developers are meant to treat copilot as a pair programmer, automating the boring parts of software development.
+This means Copilot is meant to be used thousands of times in a single codebase. If GitHub's numbers are to be believed, this means that multiple *exact* copies of code from perhaps your repositories, dear reader, are being inserted into other people's repositories without attribution and without their, or your, knowledge.
+
+The question, then, is whether an AI model and its outputs constitute derivative works of its training data. Microsoft argues that they don't. However, this argument suggests that a difference in degree of obfuscation in the process of copying code constitutes a legal difference in kind, which is ludicrous.
+
+For example, if I, an enterprising software engineer, wanted to use GPL'd code in my proprietary project without changing my license, then all I'd have to do is create a new "copy-paste" tool which rather than simply copying text into a buffer to be outputted after, instead trained an "AI" model with that data until the model only outputted that exact data 0.1% of the time. Thus, I could feed the GPL'd section into this model, wait for the correct output, and /viola/, [[https://knowyourmeme.com/memes/i-made-this]["I made this"]].
+
+This blatent disregard for licenses constitutes what Drew Devault calls [[https://drewdevault.com/2022/06/23/Copilot-GPL-washing.html]["open source laundering"]]. He writes "[GitHub] built a tool which facilitates the large-scale laundering of free software into non-free software by their customers, who GitHub offers plausible deniability through an inscrutable algorithm." This, whether intentional or not, is unacceptable.
+
+In addition to this, GitHub is now charging for use of Copilot. For $10 a month, you can use a model which was trained on *your code* without your knowledge. GitHub is monetizing your data to sell it back to you.
+
+The way GitHub could fix this would be to license the entire Copilot system under a GPL compatible license *and* require that it only be used in projects licensed under GPL compatible licenses. This is never going to happen. Microsoft has shown interest in using the underlying model in its other products, including many of it's Office suite products.
+
+* Other Options
+If you are convinced by these arguments and would like to leave GitHub, here are some alternatives to consider.
+
+If you like the Github workflow, then [[https://codeberg.org/][CodeBerg]] and [[https://about.gitlab.com/][Gitlab]] may be the forges for you. Both are open source and are very easy to get used to coming from GitHub, and they are free to use.
+
+My choice is Drew Devault's [[https://sourcehut.org/][sourcehut]], which I contribute to monetarily. Due to it being very different from GitHub, I hesitate to recommend it for those who like the shiny graphics of GitHub, but for those like me for whom those UI details are irrelevant, I strongly recommend trying it out.
+
+The FSF provides a, characteristically extreme though helpful, ranking of hosting platforms [[https://www.gnu.org/software/repo-criteria-evaluation.html][here]].
+
+* The Tyranny of Network Effects
+You may be asking, why, then, do I still have a Github account? You may indeed be reading this right now on my GitHub account.
+I still have a GitHub account for the same reason I have a Facebook, Instagram, or Reddit account: other people use these services. There are very strong network effects in play keeping me on these ethically horrible services. If I want to contribute to open source, I need a GitHub account. If I want to communicate with my college friends, I need Facebook and Instagram.
+Thus, while I try my hardest to avoid using GitHub where possible, I still have an account in order to do open source work.
+
+
+* Further reading
+Much of the ideas from this article were drawn from a number of sources which I strongly recommend reading in full, including:
+- [[https://drewdevault.com/2022/06/23/Copilot-GPL-washing.html][GitHub Copilot and open source laundering]] by Drew Devault
+- [[https://drewdevault.com/2022/03/29/free-software-free-infrastructure.html][It is important for free software to use free software infrastructure]] by Drew Devault
+- [[https://sanctum.geek.nz/why-not-github.html][Why not GitHub?]] by Tom Ryder
