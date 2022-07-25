@@ -17,7 +17,7 @@ I will focus on Copilot as a concrete example of the dangers that GitHup represe
 Copilot is an "AI pair programmer" which "suggest[s] code and entire functions in real-time, right from your editor". This, despite the existential risk it hints at to software developers, is legitimately interesting. The problem, however, is in how it was trained.
 
 Copilot is a neural network, based on GPT-3, which was trained on code from GitHub itself.
-Much of this code is licensed under copyleft licenses, such as the [[https://en.wikipedia.org/wiki/GNU_General_Public_License][GPL]], which require that all derivative works also be licensed under GPL compatible licenses.
+Much of this code is licensed under copyleft licenses, such as the [[https://en.wikipedia.org/wiki/GNU_General_Public_License][GPL]], which require that all derivative works also be licensed under compatible licenses.
 
 This presents a potential problem for code produced by this model, even if different from any code in the training set.
 Copilot even sometimes produces exact replicas of code from its training data, in fact Github itself found that it does this 0.1% of the time.
@@ -34,8 +34,12 @@ This blatent disregard for software licenses constitutes what Drew Devault calls
 
 In addition to this, GitHub is now [[https://github.blog/2022-06-21-github-copilot-is-generally-available-to-all-developers/][charging for use of Copilot]]. For (at time of writing) $10 a month, you can use a model which was trained on *your code* without your knowledge. GitHub is monetizing your data to sell it back to you.
 
-The way GitHub could fix this would be to license the entire Copilot system under a GPL compatible license *and* require that it only be used in projects licensed under GPL compatible licenses.
-This is never going to happen as Microsoft has shown interest in using the underlying model in its other products, including many of it's Office suite products. 
+GitHub could fix this by doing three things:
+1. License the entire Copilot system under a GPL compatible license
+2. Require that it only be used in projects licensed under GPL compatible licenses. 
+3. Only include GPL compatible code in the training data.
+
+This is never going to happen as Microsoft has shown interest in using the underlying model in its other products, including many in its Office suite. 
 
 * Other Options
 If you are convinced by these arguments and would like to leave GitHub, here are some alternatives to consider.
@@ -45,13 +49,13 @@ If you like the Github workflow, then [[https://codeberg.org/][Codeberg]] and [[
 My choice is Drew Devault's [[https://sourcehut.org/][sourcehut]], which I contribute to monetarily.
 Due to it being visually different from GitHub, I hesitate to recommend it for those who like the shiny graphics of the latter, but for those like me for whom those UI details are irrelevant, I strongly recommend trying it out.
 Sourcehut also plans to require payment for maintainer accounts, but I see this as a benefit for two reasons:
-- The business model is much more transparent
+- The business model is more transparent
 - The company is accountable to us, its users
 
 The FSF provides a, characteristically extreme though helpful, ranking of hosting platforms [[https://www.gnu.org/software/repo-criteria-evaluation.html][here]].
 
 * The Tyranny of Network Effects
-You may be asking, why, then, do I still have a Github account?
+You may be asking why, then, do I still have a Github account?
 You may indeed be reading this right now on my GitHub account.
 
 I still have a GitHub account for the same reason I have a Facebook, Instagram, or Reddit account: other people I care about use these services.
