@@ -13,7 +13,7 @@ I am, and [[https://davelane.nz/microsoft-there-way-win-our-trust][many others]]
 Microsoft bought GitHub in 2018, leading many to look for other options.
 
 * Github Copilot
-I will focus on Copilot as a concrete example of the dangers that GitHup represents to open source. GitHub Copilot represents a blatent disregard for software licenses on the part of Github and Microsoft.
+I will focus on Copilot as a concrete example of the dangers that GitHub represents to open source. GitHub Copilot represents a blatent disregard for software licenses on the part of Github and Microsoft.
 Copilot is an "AI pair programmer" which "suggest[s] code and entire functions in real-time, right from your editor". This, despite the existential risk it hints at to software developers, is legitimately interesting. The problem, however, is in how it was trained.
 
 Copilot is a neural network, based on GPT-3, which was trained on code from GitHub itself.
