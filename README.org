@@ -58,8 +58,8 @@ The FSF provides a, characteristically extreme though helpful, ranking of hostin
 You may be asking why, then, do I still have a Github account?
 You may indeed be reading this right now on my GitHub account.
 
-I still have a GitHub account for the same reason I have a Facebook, Instagram, or Reddit account: other people I care about use these services.
-There are very strong network effects in play keeping many of us using these unethical services.
+I still have a GitHub account for the same reason I have a [[https://stallman.org/facebook.html][Facebook, Instagram]], or Reddit account: other people I care about use these services.
+There are very strong network effects in play keeping many of us on these unethical platforms.
 If I want to communicate with my college friends, I need Facebook and Instagram.
 If I want to contribute to open source, I need a GitHub account.
 Thus, while I try my hardest to avoid using GitHub where possible, I still have an account in order to do open source work.
