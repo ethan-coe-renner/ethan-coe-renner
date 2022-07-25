@@ -59,13 +59,13 @@ You may be asking why, then, do I still have a Github account?
 You may indeed be reading this right now on my GitHub account.
 
 I still have a GitHub account for the same reason I have a Facebook, Instagram, or Reddit account: other people I care about use these services.
-There are very strong network effects in play keeping me on these ethically horrible services.
+There are very strong network effects in play keeping many of us using these unethical services.
 If I want to communicate with my college friends, I need Facebook and Instagram.
 If I want to contribute to open source, I need a GitHub account.
 Thus, while I try my hardest to avoid using GitHub where possible, I still have an account in order to do open source work.
 
 * Further reading
-Much of the ideas from this article were drawn from a number of sources which I strongly recommend reading in full, including:
+Many of the ideas from this article were drawn from a number of sources which I strongly recommend reading in full, including:
 - [[https://drewdevault.com/2022/06/23/Copilot-GPL-washing.html][GitHub Copilot and open source laundering]] by Drew Devault
 - [[https://drewdevault.com/2022/03/29/free-software-free-infrastructure.html][It is important for free software to use free software infrastructure]] by Drew Devault
 - [[https://sanctum.geek.nz/why-not-github.html][Why not GitHub?]] by Tom Ryder
