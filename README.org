@@ -1,8 +1,8 @@
-#+title: Why I don't use GitHub
+#+title: Why I don't use GitHub (for personal projects)
 #+subtitle: And you shouldn't either
 #+author: Ethan Coe-Renner
 
-/tldr: GitHub is bad and I use [[https://git.sr.ht/~code-runner][sourcehut]] instead/
+/tldr: I have some concerns about GitHub and I use [[https://git.sr.ht/~code-runner][sourcehut]] instead for my personal projects/
 
 * Centralization
 Centralization of infrastructure is bad.
