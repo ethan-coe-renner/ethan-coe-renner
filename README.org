@@ -1,4 +1,3 @@
-#+title: I don't use GitHub (for personal projects)
 #+author: Ethan Coe-Renner
 
-I have some concerns about GitHub and I use [[https://git.sr.ht/~code-runner][sourcehut]] instead for my personal projects/
+Personal projects on [[https://git.sr.ht/~code-runner][sourcehut]].
